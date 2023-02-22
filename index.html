@@ -1,11 +1,543 @@
-<html>
-  <head>
-    <title>Href Attribute Example</title>
-  </head>
-  <body>
-    <h1>Href Attribute Example</h1>
-    <p>
-      <a href="https://www.freecodecamp.org/contribute/">The freeCodeCamp Contribution Page</a> shows you how and where you can contribute to freeCodeCamp's community and growth.
-    </p>
-  </body>
-</html>
+<!DOCTYPE html>
+<!-- saved from url=(0043)https://equator.com/email-sig/generator.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>SGK Email Signature Generator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Gasper Hafner - Equator.com">
+  <style type="text/css">
+    html,body {
+      padding:0;
+      margin:0;
+      width:100%;
+      height: 100%;
+    }
+    label {
+      width: 100px;
+      display: inline-block;
+    }
+    input {
+      width: 300px;
+    }
+    .title2,.email2,.officePhone,.fax {
+      display: none;
+    }
+    textarea {
+      outline: none;
+      resize: none;
+      overflow: auto;
+      height: 300px;
+      width: calc(100% - 6px);
+    }
+    #gif,#type {
+      width:308px;
+    }
+    #renderDiv {
+      width: calc(100% - 2px);
+      /*height: 300px;*/
+      border: 1px solid #000000;
+    }
+    /* Style the tab */
+    .tab {
+      overflow: hidden;
+      border: 1px solid #ccc;
+      background-color: #f1f1f1;
+    }
+    /* Style the buttons that are used to open the tab content */
+    .tab button {
+      background-color: inherit;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      transition: 0.3s;
+    }
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+      background-color: #ddd;
+    }
+    /* Create an active/current tablink class */
+    .tab button.active {
+      background-color: #ccc;
+    }
+    /* Style the tab content */
+    .tabcontent {
+      display: none;
+      padding: 6px 12px;
+      border: 1px solid #ccc;
+      border-top: none;
+    }
+    .iosinstructions {
+      padding: 6px 12px;
+    }
+    .selectable {
+        -webkit-touch-callout: all; /* iOS Safari */
+        -webkit-user-select: all; /* Safari */
+        -khtml-user-select: all; /* Konqueror HTML */
+        -moz-user-select: all; /* Firefox */
+        -ms-user-select: all; /* Internet Explorer/Edge */
+        user-select: all; /* Chrome and Opera */
+    }
+  </style>
+</head>
+<body onload="loadCode(); document.getElementById(&#39;defaultOpen&#39;).click();">
+  <label for="type">Choose a type:</label>
+  <select name="type" id="type" onchange="loadCode();">
+    <option selected="" value="brand">Brand</option>
+    <option value="websafe">WebSafe</option>
+    <option value="onsiteBrand">On-Site Brand</option>
+    <option value="onsiteWebSafe">On-Site WebSafe</option>
+    <option value="mobile">Mobile</option>
+    <option value="detailed">Detailed</option>
+  </select><br>
+  <label for="name">Name:</label>
+  <input type="text" name="name" id="name" value="Firstname Lastname" onkeyup="makeEmail(); loadCode();"><br>
+  <label for="title">Title:</label>
+  <input type="text" name="title" id="title" value="Title" onkeyup="loadCode();"><br>
+  <label for="title2" class="title2" style="display: none;">Title 2:</label>
+  <input type="text" name="title2" id="title2" value="Title 2" onkeyup="loadCode();" class="title2" style="display: none;"><br class="title2" style="display: none;">
+  <label for="phone">Phone:</label>
+  <input type="text" name="phone" id="phone" value="+00 (0) 000 000 000" onkeyup="loadCode();"><br>
+  <label for="officePhone" class="officePhone" style="display: none;">Office Phone:</label>
+  <input type="text" name="officePhone" id="officePhone" class="officePhone" value="+00 (0) 000 000 000" onkeyup="loadCode();" style="display: none;"><br class="officePhone" style="display: none;">
+  <label for="fax" class="fax" style="display: none;">Fax:</label>
+  <input type="text" name="fax" id="fax" class="fax" value="+00 (0) 000 000 000" onkeyup="loadCode();" style="display: none;"><br class="fax" style="display: none;">
+  <label for="email" class="email" style="display: inline-block;">Email:</label>
+  <input type="text" name="email" id="email" value="firstname.lastname" onkeyup="loadCode();" class="email" style="display: inline-block;"><span class="email" style="display: inline-block;">@equator-design.com</span><br class="email" style="display: inline-block;">
+  <label for="email2" class="email2" style="display: none;">Email 2:</label>
+  <input type="text" name="email2" id="email2" value="firstname.lastname@domain.com" onkeyup="loadCode();" class="email2" style="display: none;"><br class="email2" style="display: none;">
+  <label for="office">Office:</label>
+  <input type="text" name="office" id="office" value="Office address | City, Postcode, Country" onkeyup="loadCode();"><br>
+  <label for="gif" class="gif" style="display: inline-block;">Animated GIF:</label>
+  <select name="gif" id="gif" onchange="loadCode();" class="gif" style="display: inline-block;">
+    <option value="none">None</option>
+    <option value="schawk">Schawk</option>
+    <option value="anthem">Anthem</option>
+    <option value="idl">IDL</option>
+    <option value="sgk">EQT INC</option>
+    <option value="brandimage">Brand Image</option>
+  </select><br class="gif" style="display: inline-block;"><br>
+  <div class="tab">
+    <button class="tablinks active" onclick="openCity(event, &#39;RenderedArea&#39;)" id="defaultOpen">Rendered</button>
+ 
+  <div id="RenderedArea" class="tabcontent" style="display: block;">
+    <h3>Rendered HTML:</h3>
+    <p>Click/touch inside the black square to copy the signature, then paste it to email client that supports rendered signature.</p>
+    <div id="renderDiv" class="selectable" onclick="document.execCommand(&#39;copy&#39;); alert(&#39;Copied!&#39;);"><style type="text/css">@font-face{font-family:'Open Sans';font-style:normal;font-weight:400;src:local('Open Sans Regular'),local('OpenSans-Regular'),url(https://fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-UFVZ0bf8pkAg.woff2)format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Open Sans';font-style:normal;font-weight:700;src:local('Open Sans Bold'),local('OpenSans-Bold'),url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN7rgOUuhpKKSTjw.woff2)format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}a[x-apple-data-detectors]{color:#000000!important;text-decoration:none!important;font-size:inherit!important;font-family:inherit!important;font-weight:inherit!important;line-height:inherit!important;}</style><!--[if gt mso 15]><style type="text/css"media="all">table,tr,td{border-collapse:collapse}tr{font-size:0px;line-height:0px;border-collapse:collapse}</style><![endif]--><!--[if mso]><xml><o:OfficeDocumentSettings><o:AllowPNG/><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml><style type="text/css">.fallback-font{font-family:Open Sans Regular,Arial,sans-serif;}.fallback-font-bold{font-family:Open Sans Bold,Arial,sans-serif;}.fallback-font-red{font-family:Open Sans Regular,Arial,sans-serif;color:#FF0000!important;}</style><![endif]-->
+	<table style="vertical-align:top;border-collapse:collapse;border-spacing:0;border:none;font-family:Open Sans Regular,Arial,sans-serif;font-size:0px;color:#000000;" cellpadding="0" cellspacing="0" border="0" valign="top">
+		<tbody>
+		<tr>
+		<td style="padding:0;vertical-align:top;text-align:left;height:128px;width:125px;max-width:125px;font-family:Open Sans Regular,Arial,sans-serif;font-size:29px;" width="125" height="28" valign="top">
+		<img src="./images/logo.png" alt="SGK™" style="-ms-interpolation-mode:bicubic;border:0 none;color:#000000;display:block;font-family:Open Sans Bold,Arial,sans-serif;font-size:29px;font-weight:700;width:125px;height:128px;outline:none;text-decoration:none;" width="125" height="128" border="0/>
+	</td>
+	</tr>
+	</tbody>
+	</table>
+
+  </div>
+  	<tr><td style="padding:0;vertical-align:top;text-align:left;height:128px;font-family:Open Sans Regular,Arial,sans-serif;font-size:12px;line-height:16px;" height="128" valign="top"><table style="border-collapse:collapse;border-spacing:0;border:none;vertical-align:top;font-family:Open Sans Regular,Arial,sans-serif;font-size:0p;line-height:16px;" cellpadding="0" cellspacing="0" border="0" valign="top"><tbody><tr><td style="padding:0;vertical-align:top;text-align:left;height:63px;font-family:Open Sans Regular,Arial,sans-serif;font-size:12px;line-height:16px;" height="63" valign="top"><span class="fallback-font-bold" style="color:#ff0000;font-family:Open Sans Bold,Arial,sans-serif;font-weight:700;font-size:14px;line-height:15px;">Firstname Lastname</span>
+	<br><span class="fallback-font-red" style="color:#000000;font-family:Open Sans Regular,Arial,sans-serif;font-size:12px;line-height:16px;text-transform:uppercase;">Title</span>
+	<span class="fallback-font-red" style="color:#000000;font-family:Open Sans Regular,Arial,sans-serif;font-size:12px;line-height:16px;text-transform:uppercase;">(SHE/HER)</span><br>
+	<span class="fallback-font" style="color:#000000!important;font-family:Open Sans Regular,Arial,sans-serif;font-size:12px;line-height:16px;text-decoration:none!important;"><a href="mailto:firstname.lastname@equator.com" style="color:#000000;text-decoration:none!important;"><span class="fallback-font" style="color:#000000!important;text-decoration:none!important;">firstname.lastname@equator.com</span></a></span>
+	</td></tr><tr><td style="padding:0;vertical-align:top;text-align:left;line-height:16px;font-family:Open Sans Regular,Arial,sans-serif;font-size:12px;text-decoration:none!important;" valign="top">
+	
+	<span class="fallback-font" style="color:#000000;font-family:Open Sans Regular,Arial,sans-serif;font-size:12px;line-height:16px;text-decoration:none!important;">Office address | City, Postcode, Country</span><br><br><span class="fallback-font-bold" style="color:#000000!important;font-family:Open Sans Bold,Arial,sans-serif;font-size:12px;line-height:16px;text-decoration:none!important;font-weight:700;"><a href="https://equator.com/" target="_blank" style="color:#000000;text-decoration:none!important;font-weight:700;"><br><span class="fallback-font" style="color:#000000!important;text-decoration:none!important;">EQUATOR-DESIGN.COM</span></a></span><br></td></tr></tbody></table></td></tr><tr><td colspan="3" class="fallback-font-bold" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;width:300px;font-family:Open Sans Bold,Arial,sans-serif;font-size:20px;font-weight:700;padding-top:0px;" width="300"><br><img src="./SGK Email Signature Generator_files/SGK.gif" alt="SGK INC" height="auto" style="-ms-interpolation-mode:bicubic;border:0 none;color:#000000;display:block;font-family:Open Sans Bold,Arial,sans-serif;font-size:20px;font-weight:700;height:auto;line-height:100%;outline:none;text-decoration:none;width:300px;" width="300"></td></tr></tbody></table></div>
+  </div>
+  <script type="text/javascript">
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    function decodeHtml(html) {
+        var txt = document.createElement("textarea");
+        txt.innerHTML = html;
+        return txt.value;
+    }
+    function showHide(what,comm) {
+      var things = document.querySelectorAll(what);
+      for (var i = things.length - 1; i >= 0; i--) {
+        things[i].style.display = comm;
+      }
+    }
+    function makeEmail() {
+      var data = document.getElementById('name').value.trim();
+      var newdata = data.replace(" ", ".");
+      document.getElementById('email').value = newdata.toLowerCase();
+      document.getElementById('email2').value = newdata.toLowerCase()+"@domain.com";
+    }
+    function loadCode() {
+        function css(font,fontBold,fontFace) {
+        return `<style type="text/css">`+fontFace+`a[x-apple-data-detectors]{color:#000000!important;text-decoration:none!important;font-size:inherit!important;font-family:inherit!important;font-weight:inherit!important;line-height:inherit!important;}</style><!--[if gt mso 15]><style type="text/css"media="all">table,tr,td{border-collapse:collapse}tr{font-size:0px;line-height:0px;border-collapse:collapse}</style><![endif]--><!--[if mso]><xml><o:OfficeDocumentSettings><o:AllowPNG/><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml><style type="text/css">.fallback-font{font-family:`+font+`,Arial,sans-serif;}.fallback-font-bold{font-family:`+fontBold+`,Arial,sans-serif;}.fallback-font-red{font-family:`+font+`,Arial,sans-serif;color:#FF0000!important;}</style><![endif]-->`;
+      }
+      function fontface() {
+        return `@font-face{font-family:'Open Sans';font-style:normal;font-weight:400;src:local('Open Sans Regular'),local('OpenSans-Regular'),url(https://fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-UFVZ0bf8pkAg.woff2)format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Open Sans';font-style:normal;font-weight:700;src:local('Open Sans Bold'),local('OpenSans-Bold'),url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN7rgOUuhpKKSTjw.woff2)format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}`;
+      }
+      function getLogo(fontBold) {
+        return [`<img src="images/logo.png"alt="SGK&#x2122;"style="-ms-interpolation-mode:bicubic;border:0 none;color:#000000;display:block;font-family:`+fontBold+`,Arial,sans-serif;font-size:29px;font-weight:700;width:125px;height:128px;outline:none;text-decoration:none;"width="125"height="128"border="0">`,'SGK&#x2122;\n\n'];
+      }
+      function getSimpleLogo(fontBold) {
+        return [`<br><img src="images/logo.png"alt="SGK&#x2122;"style="-ms-interpolation-mode:bicubic;border:0 none;color:#000000;display:inline-block;font-family:`+fontBold+`,Arial,sans-serif;font-size:23px;font-weight:700;width:64px;height:65px;outline:none;text-decoration:none;"width="64"height="65"border="0"><br><br>`,'SGK&#x2122;\n\n'];
+      }
+      function getName(fontBold) {
+        var name = document.getElementById('name').value.trim();
+        if (name) {
+          return [`<span class="fallback-font-bold"style="color:#FF0000;font-family:`+fontBold+`,Arial,sans-serif;font-weight:700;font-size:14px;line-height:15px;">`+name+`</span><br>`,name+'\n'];
+        }
+        else {
+          return ["",""];
+        }
+      }
+      function getTitle(font) {
+        var title = document.getElementById('title').value.trim();
+        if (title) {
+          return [`<span class="fallback-font-red"style="color:#000000;font-family:`+font+`,Arial,sans-serif;font-size:12px;line-height:16px;text-transform:uppercase;">`+title+`</span>`,title.toUpperCase()+'\n'];
+        }
+        else {
+          return ["",""];
+        }
+      }
+      function getTitle2(font) {
+        var title2 = document.getElementById('title2').value.trim();
+        if (title2) {
+          return [`<span class="fallback-font-red"style="color:#FF0000;font-family:`+font+`,Arial,sans-serif;font-size:12px;line-height:16px;text-transform:uppercase;">`+title2+`</span>`,title2.toUpperCase()+'\n'];
+        }
+        else {
+          return ["",""];
+        }
+      }
+      function getPhone(font) {
+        var phone = document.getElementById('phone').value.trim();
+        if (phone) {
+          return [`<span class="fallback-font-bold"style="color:#000000;font-family:`+fontBold+`,Arial,sans-serif;font-weight:700;font-size:12px;">M </span><span class="fallback-font"style="color:#000000!important;font-family:`+font+`,Arial,sans-serif;font-size:12px;line-height:16px;text-decoration:none!important;">`+phone+`</span><br>`,phone+'\n'];
+        }
+        else {
+          return ["",""];
+        }
+      }
+      function getOfficePhone(font) {
+        var officePhone = document.getElementById('officePhone').value.trim();
+        if (officePhone) {
+          return [`<span class="fallback-font-bold"style="color:#000000;font-family:`+fontBold+`,Arial,sans-serif;font-weight:700;font-size:12px;">O </span><span class="fallback-font"style="color:#000000!important;font-family:`+font+`,Arial,sans-serif;font-size:12px;line-height:16px;text-decoration:none!important;">`+officePhone+`</span><br>`,officePhone+'\n'];
+        }
+        else {
+          return ["",""];
+        }
+      }
+      function getFax(font) {
+        var fax = document.getElementById('fax').value.trim();
+        if (fax) {
+          return [`<span class="fallback-font-bold"style="color:#000000;font-family:`+fontBold+`,Arial,sans-serif;font-weight:700;font-size:12px;">F </span><span class="fallback-font"style="color:#000000!important;font-family:`+font+`,Arial,sans-serif;font-size:12px;line-height:16px;text-decoration:none!important;">`+fax+`</span><br>`,fax+'\n'];
+        }
+        else {
+          return ["",""];
+        }
+      }
+      function getEmail(font) {
+        var email = document.getElementById('email').value.trim();
+        if (email) {
+          return [`<span class="fallback-font"style="color:#000000!important;font-family:`+font+`,Arial,sans-serif;font-size:12px;line-height:16px;text-decoration:none!important;"><a href="mailto:`+email+`@equator.com"style="color:#000000;text-decoration:none!important;"><span class="fallback-font"style="color:#000000!important;text-decoration:none!important;">`+email+`@equator.com</span></a></span><br>`,email+'@equator.com\n'];
+        }
+        else {
+          return ["",""];
+        }
+      }
+      function getEmail2(font) {
+        var email2 = document.getElementById('email2').value.trim();
+        if (email2) {
+          return [`<span class="fallback-font"style="color:#000000!important;font-family:`+font+`,Arial,sans-serif;font-size:12px;line-height:16px;text-decoration:none!important;"><a href="mailto:`+email2+`"style="color:#000000;text-decoration:none!important;"><span class="fallback-font"style="color:#000000!important;text-decoration:none!important;">`+email2+`</span></a></span><br>`,email2+'\n'];
+        }
+        else {
+          return ["",""];
+        }
+      }
+      function getOffice(font) {
+        var office = document.getElementById('office').value.trim();
+        if (office) {
+          return [`<span class="fallback-font"style="color:#000000;font-family:`+font+`,Arial,sans-serif;font-size:12px;line-height:16px;text-decoration:none!important;">`+office+`</span>`,office+'\n\n'];
+        }
+        else {
+          return ["",""];
+        }
+      }
+      function getSgkInc(fontBold) {
+        return [`<span class="fallback-font-bold"style="color:#000000!important;font-family:`+fontBold+`,Arial,sans-serif;font-size:12px;line-height:16px;text-decoration:none!important;font-weight:700;"><a href="https://sgkinc.com"target="_blank"style="color:#000000;text-decoration:none!important;font-weight:700;"><span class="fallback-font"style="color:#000000!important;text-decoration:none!important;">equator.com</span></a></span><br>`,'https://equator.com\n'];
+      }
+      function getAmic() {
+        return [`<span class="fallback-font"style="color:#000000;font-family:`+font+`,Arial,sans-serif;font-size:10px;line-height:12px;">A Matthews International Company.</span><br>`,'A Matthews International Company.\n'];
+      }
+      function icons(font) {
+        return ['<a href="https://www.linkedin.com/company/sgk/"target="_blank"style=""><img src="images/in.png"alt="LinkedIn"height="27"width="27"style="height:27px;width:27px;padding-right:10px;"></a>&nbsp;&nbsp;&nbsp;<a href="https://twitter.com/SGKInc"target="_blank"style=""><img src="images/twitter.png"alt="Twitter"height="27"width="27"style="height:27px;width:27px;padding-right:10px;"></a>&nbsp;&nbsp;&nbsp;<a href="https://www.facebook.com/SGKInc"target="_blank"style=""><img src="images/fb.png"alt="Facebook"height="27"width="27"style="height:27px;width:27px;"></a><br><br>',"https://www.linkedin.com/company/sgk\nhttps://twitter.com/SGKInc\nhttps://www.facebook.com/SGKInc\n\n"];
+      }
+      function getGif(fontBold) {
+        var gif = document.getElementById('gif').value;
+        if (gif == "schawk") {
+          return [`<tr><td colspan="3"class="fallback-font-bold"style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;width:300px;font-family:`+fontBold+`,Arial,sans-serif;font-size:20px;font-weight:700;padding-top:0px;"width="300"><br><img src="images/Schawk.gif"alt="SCHAWK! IS NOW SGK&#x2122;"height="auto"style="-ms-interpolation-mode:bicubic;border:0 none;color:#000000;display:block;font-family:`+fontBold+`,Arial,sans-serif;font-size:20px;font-weight:700;height:auto;line-height:100%;outline:none;text-decoration:none;width:300px;"width="300"></td></tr>`,"SCHAWK! IS NOW SGK&#x2122;"];
+        }
+        else if (gif == "anthem") {
+          return [`<tr><td colspan="3"class="fallback-font-bold"style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;width:300px;font-family:`+fontBold+`,Arial,sans-serif;font-size:20px;font-weight:700;padding-top:0px;"width="300"><br><img src="images/Anthem.gif"alt="ANTHEM&#x2122; IS NOW SGK&#x2122;"height="auto"style="-ms-interpolation-mode:bicubic;border:0 none;color:#000000;display:block;font-family:`+fontBold+`,Arial,sans-serif;font-size:20px;font-weight:700;height:auto;line-height:100%;outline:none;text-decoration:none;width:300px;"width="300"></td></tr>`,"ANTHEM&#x2122; IS NOW SGK&#x2122;"];
+        }
+        else if (gif == "sgk") {
+          return [`<tr><td colspan="3"class="fallback-font-bold"style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;width:300px;font-family:`+fontBold+`,Arial,sans-serif;font-size:20px;font-weight:700;padding-top:0px;"width="300"><br><img src="images/EQT.png"alt="Equator INC"height="auto"style="-ms-interpolation-mode:bicubic;border:0 none;color:#000000;display:block;font-family:`+fontBold+`,Arial,sans-serif;font-size:20px;font-weight:700;height:auto;line-height:100%;outline:none;text-decoration:none;width:300px;"width="300"></td></tr>`,""];
+        }
+        else if (gif == "brandimage") {
+          return [`<tr><td colspan="3"class="fallback-font-bold"style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;width:300px;font-family:`+fontBold+`,Arial,sans-serif;font-size:20px;font-weight:700;padding-top:0px;"width="300"><br><img src="images/BrandImage.gif"alt="BrandImage&#x2122; IS NOW SGK&#x2122;"height="auto"style="-ms-interpolation-mode:bicubic;border:0 none;color:#000000;display:block;font-family:`+fontBold+`,Arial,sans-serif;font-size:20px;font-weight:700;height:auto;line-height:100%;outline:none;text-decoration:none;width:300px;"width="300"></td></tr>`,"BRANDIMAGE&#x2122; IS NOW SGK&#x2122;"];
+        }
+        else if (gif == "idl") {
+          return [`<tr><td colspan="3"class="fallback-font-bold"style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;width:300px;font-family:`+fontBold+`,Arial,sans-serif;font-size:20px;font-weight:700;padding-top:0px;"width="300"><br><img src="images/IDL.gif"alt="IDL&#x2122; IS NOW SGK&#x2122;"height="auto"style="-ms-interpolation-mode:bicubic;border:0 none;color:#000000;display:block;font-family:`+fontBold+`,Arial,sans-serif;font-size:20px;font-weight:700;height:auto;line-height:100%;outline:none;text-decoration:none;width:300px;"width="300"></td></tr>`,"IDL&#x2122; IS NOW SGK&#x2122;"];
+        }
+        else {
+          return ["",""];
+        }
+      }
+      function makeTable(font,logo,name,title,phone,email,email2,sgkinc,office,amic,gif,icons) {
+        return `<table style="vertical-align:top;border-collapse:collapse;border-spacing:0;border:none;font-family:`+font+`,Arial,sans-serif;font-size:0px;color:#000000;"cellpadding="0"cellspacing="0"border="0"valign="top"><tr><td style="padding:0;vertical-align:top;text-align:left;height:128px;width:125px;max-width:125px;font-family:`+font+`,Arial,sans-serif;font-size:29px;"width="125"height="128"valign="top">`+logo+`</td><td style="width:10px;max-width:10px;font-size:0;"width="10">&nbsp;</td><td style="padding:0;vertical-align:top;text-align:left;height:128px;font-family:`+font+`,Arial,sans-serif;font-size:12px;line-height:16px;"height="128"valign="top"><table style="border-collapse:collapse;border-spacing:0;border:none;vertical-align:top;font-family:`+font+`,Arial,sans-serif;font-size:0p;line-height:16px;"cellpadding="0"cellspacing="0"border="0"valign="top"><tr><td style="padding:0;vertical-align:top;text-align:left;height:63px;font-family:`+font+`,Arial,sans-serif;font-size:12px;line-height:16px;"height="63"valign="top">`+name+title+`</td></tr><tr><td style="padding:0;vertical-align:top;text-align:left;line-height:16px;font-family:`+font+`,Arial,sans-serif;font-size:12px;text-decoration:none!important;"valign="top">`+phone+email+sgkinc+office+`<br><br>`+icons+amic+`</td></tr></table></td></tr>`+gif+`</table>`;
+      }
+      function makeDetailedTable(font,logo,name,title,phone,officePhone,fax,email,email2,sgkinc,office,amic,gif,icons) {
+        return `<table style="vertical-align:top;border-collapse:collapse;border-spacing:0;border:none;font-family:`+font+`,Arial,sans-serif;font-size:0px;color:#000000;"cellpadding="0"cellspacing="0"border="0"valign="top"><tr><td style="padding:0;vertical-align:top;text-align:left;height:128px;width:125px;max-width:125px;font-family:`+font+`,Arial,sans-serif;font-size:29px;"width="125"height="128"valign="top">`+logo+`</td><td style="width:10px;max-width:10px;font-size:0;"width="10">&nbsp;</td><td style="padding:0;vertical-align:top;text-align:left;height:128px;font-family:`+font+`,Arial,sans-serif;font-size:12px;line-height:16px;"height="128"valign="top"><table style="border-collapse:collapse;border-spacing:0;border:none;vertical-align:top;font-family:`+font+`,Arial,sans-serif;font-size:0p;line-height:16px;"cellpadding="0"cellspacing="0"border="0"valign="top"><tr><td style="padding:0;vertical-align:top;text-align:left;height:63px;font-family:`+font+`,Arial,sans-serif;font-size:12px;line-height:16px;"height="63"valign="top">`+name+title+`</td></tr><tr><td style="padding:0;vertical-align:top;text-align:left;line-height:16px;font-family:`+font+`,Arial,sans-serif;font-size:12px;text-decoration:none!important;"valign="top">`+phone+officePhone+fax+email+sgkinc+office+`<br><br>`+icons+amic+`</td></tr></table></td></tr>`+gif+`</table>`;
+      }
+      function makeVerdanaTable(font,logo,name,title,title2,phone,email,email2,sgkinc,office,amic,gif,icons) {
+        return `<table style="vertical-align:top;border-collapse:collapse;border-spacing:0;border:none;font-family:`+font+`,Arial,sans-serif;font-size:0px;color:#000000;"cellpadding="0"cellspacing="0"border="0"valign="top"><tr><td style="padding:0;vertical-align:top;text-align:left;height:128px;width:125px;max-width:125px;font-family:`+font+`,Arial,sans-serif;font-size:29px;"width="125"height="128"valign="top">`+logo+`</td><td style="width:10px;max-width:10px;font-size:0;"width="10">&nbsp;</td><td style="padding:0;vertical-align:top;text-align:left;height:128px;font-family:`+font+`,Arial,sans-serif;font-size:12px;line-height:16px;"height="128"valign="top"><table style="border-collapse:collapse;border-spacing:0;border:none;vertical-align:top;font-family:`+font+`,Arial,sans-serif;font-size:0px;line-height:16px;"cellpadding="0"cellspacing="0"border="0"valign="top"><tr><td style="padding:0;vertical-align:top;text-align:left;height:63px;font-family:`+font+`,Arial,sans-serif;font-size:12px;line-height:16px;"height="63"valign="top">`+name+title+`<br>`+title2+`</td></tr><tr><td style="padding:0;vertical-align:top;text-align:left;line-height:16px;font-family:`+font+`,Arial,sans-serif;font-size:12px;text-decoration:none!important;"valign="top">`+phone+email+sgkinc+office+`<br><br>`+icons+amic+`</td></tr></table></td></tr>`+gif+`</table>`;
+      }
+      function makeSimpleTable(font,logo,name,title,phone,office) {
+        return `<table style="border-collapse:collapse;border-spacing:0;border:none;vertical-align:top;font-family:`+font+`,Arial,sans-serif;font-size:0px;line-height:16px;"cellpadding="0"cellspacing="0"border="0"valign="top"><tr><td style="padding:0;vertical-align:top;text-align:left;font-family:`+font+`,Arial,sans-serif;font-size:12px;line-height:16px;"valign="top"><p style="line-height:13px;margin:0;">`+name+title+`<br>`+phone+logo+office+`</p></td></tr></table>`;
+      }
+      function makeOnsiteTable(fontBold,font,logo,name,title,title2,phone,email,email2,sgkinc,office,amic) {
+        return `<table style="vertical-align:top;border-collapse:collapse;border-spacing:0;border:none;font-family:`+font+`,Arial,sans-serif;font-size:0px;color:#000000;"cellpadding="0"cellspacing="0"border="0"valign="top"><tr><td style="padding:0;vertical-align:top;text-align:left;height:128px;width:125px;max-width:125px;font-family:`+font+`,Arial,sans-serif;font-size:29px;"width="125"height="128"valign="top">`+logo+`</td><td style="width:10px;max-width:10px;font-size:0;"width="10">&nbsp;</td><td style="padding:0;vertical-align:top;text-align:left;height:128px;font-family:`+font+`,Arial,sans-serif;font-size:12px;line-height:16px;"height="128"valign="top"><table style="border-collapse:collapse;border-spacing:0;border:none;vertical-align:top;font-family:`+font+`,Arial,sans-serif;font-size:0px;line-height:16px;"cellpadding="0"cellspacing="0"border="0"valign="top"><tr><td style="padding:0;vertical-align:top;text-align:left;height:63px;font-family:`+font+`,Arial,sans-serif;font-size:12px;line-height:16px;"height="63"valign="top">`+name+title+`<br>`+title2+`</td></tr><tr><td style="padding:0;vertical-align:top;text-align:left;line-height:16px;font-family:`+font+`,Arial,sans-serif;font-size:12px;text-decoration:none!important;"valign="top">`+phone+email2+office+`<br><br><span class="fallback-font-bold"style="color:#000000!important;font-family:`+fontBold+`,Arial,sans-serif;font-size:12px;line-height:16px;font-weight:700;text-decoration:none!important;">SGK</span><br>`+email+sgkinc+amic+`</td></tr></table></td></tr></table>`;
+      }
+      var type = document.getElementById('type').value;
+      if (type == "brand") {
+        var font = "Open Sans Regular";
+        var fontBold = "Open Sans Bold";
+        var gif = getGif(fontBold);
+        var logo = getLogo(fontBold);
+        var name = getName(fontBold);
+        var title = getTitle(font);
+        var phone = getPhone(font);
+        var email = getEmail(font);
+        var office = getOffice(font);
+        var sgkinc = getSgkInc(fontBold);
+        var amic = getAmic(font);
+        showHide('.title2',"none");
+        showHide('.email2',"none");
+        showHide('.email',"inline-block");
+        showHide('.gif',"inline-block");
+        showHide('.officePhone',"none");
+        showHide('.fax',"none");
+        var text = decodeHtml(logo[1]+name[1]+title[1]+'\n'+phone[1]+email[1]+sgkinc[1]+office[1]+amic[1]+'\n'+gif[1]);
+        var code = css(font,fontBold,fontface())+makeTable(
+          font,
+          logo[0],
+          name[0],
+          title[0],
+          phone[0],
+          email[0],
+          "",
+          sgkinc[0],
+          office[0],
+          amic[0],
+          gif[0],
+          "");
+        document.getElementById('text').style = "font-family:"+font+",Arial,sans-serif;";
+        document.getElementById('text').value = text;
+        document.getElementById('rawHtml').value = code;
+        document.getElementById('renderDiv').innerHTML = code;
+      }
+      if (type == "detailed") {
+        var font = "Open Sans Regular";
+        var fontBold = "Open Sans Bold";
+        var gif = getGif(fontBold);
+        var logo = getLogo(fontBold);
+        var name = getName(fontBold);
+        var title = getTitle(font);
+        var phone = getPhone(font);
+        var officePhone = getOfficePhone(font);
+        var fax = getFax(font);
+        var email = getEmail(font);
+        var office = getOffice(font);
+        var sgkinc = getSgkInc(fontBold);
+        var amic = getAmic(font);
+        showHide('.title2',"none");
+        showHide('.email2',"none");
+        showHide('.officePhone',"inline-block");
+        showHide('.fax',"inline-block");
+        showHide('.email',"inline-block");
+        showHide('.gif',"inline-block");
+        var text = decodeHtml(logo[1]+name[1]+title[1]+'\n'+phone[1]+officePhone[1]+fax[1]+email[1]+sgkinc[1]+office[1]+amic[1]+'\n'+gif[1]);
+        var code = css(font,fontBold,fontface())+makeDetailedTable(
+          font,
+          logo[0],
+          name[0],
+          title[0],
+          phone[0],
+          officePhone[0],
+          fax[0],
+          email[0],
+          "",
+          sgkinc[0],
+          office[0],
+          amic[0],
+          gif[0],
+          "");
+        document.getElementById('text').style = "font-family:"+font+",Arial,sans-serif;";
+        document.getElementById('text').value = text;
+        document.getElementById('rawHtml').value = code;
+        document.getElementById('renderDiv').innerHTML = code;
+      }
+      else if (type == "websafe") {
+        var font = "Verdana";
+        var fontBold = "Verdana";
+        var gif = getGif(fontBold);
+        var icons = icons(font);
+        var logo = getLogo(fontBold);
+        var name = getName(fontBold);
+        var title = getTitle(font);
+        var phone = getPhone(font);
+        var email = getEmail(font);
+        var office = getOffice(font);
+        var sgkinc = getSgkInc(fontBold);
+        var amic = getAmic(font);
+        showHide('.title2',"none");
+        showHide('.email2',"none");
+        showHide('.email',"inline-block");
+        showHide('.gif',"inline-block");
+        showHide('.officePhone',"none");
+        showHide('.fax',"none");
+        var text = decodeHtml(logo[1]+name[1]+title[1]+'\n'+phone[1]+email[1]+sgkinc[1]+office[1]+amic[1]+'\n'+gif[1]);
+        var code = css(font,fontBold,"")+makeVerdanaTable(
+          font,
+          logo[0],
+          name[0],
+          title[0],
+          "",
+          phone[0],
+          email[0],
+          "",
+          sgkinc[0],
+          office[0],
+          amic[0],
+          gif[0],
+          "");
+        document.getElementById('text').style = "font-family:"+font+",Arial,sans-serif;";
+        document.getElementById('text').value = text;
+        document.getElementById('rawHtml').value = code;
+        document.getElementById('renderDiv').innerHTML = code;
+      }
+      else if (type == "onsiteBrand") {
+        var font = "Open Sans Regular";
+        var fontBold = "Open Sans Bold";
+        var logo = getLogo(fontBold);
+        var name = getName(fontBold);
+        var title = getTitle(font);
+        var title2 = getTitle2(font);
+        var phone = getPhone(font);
+        var email = getEmail(font);
+        var email2 = getEmail2(font);
+        var office = getOffice(font);
+        var sgkinc = getSgkInc(fontBold);
+        var amic = getAmic(font);
+        showHide('.title2',"inline-block");
+        showHide('.email2',"inline-block");
+        showHide('.email',"inline-block");
+        showHide('.gif',"none");
+        showHide('.officePhone',"none");
+        showHide('.fax',"none");
+        var text = decodeHtml(logo[1]+name[1]+title[1]+title2[1]+'\n'+phone[1]+email2[1]+office[1]+'SGK\n'+email[1]+sgkinc[1]+amic[1]);
+        var code = css(font,fontBold,fontface())+makeOnsiteTable(
+          fontBold,
+          font,
+          logo[0],
+          name[0],
+          title[0],
+          title2[0],
+          phone[0],
+          email[0],
+          email2[0],
+          sgkinc[0],
+          office[0],
+          amic[0]);
+        document.getElementById('text').style = "font-family:"+font+",Arial,sans-serif;";
+        document.getElementById('text').value = text;
+        document.getElementById('rawHtml').value = code;
+        document.getElementById('renderDiv').innerHTML = code;
+      }
+      else if (type == "onsiteWebSafe") {
+        var font = "Verdana";
+        var fontBold = "Verdana";
+        var logo = getLogo(fontBold);
+        var name = getName(fontBold);
+        var title = getTitle(font);
+        var title2 = getTitle2(font);
+        var phone = getPhone(font);
+        var email = getEmail(font);
+        var email2 = getEmail2(font);
+        var office = getOffice(font);
+        var sgkinc = getSgkInc(fontBold);
+        var amic = getAmic(font);
+        showHide('.title2',"inline-block");
+        showHide('.email2',"inline-block");
+        showHide('.email',"inline-block");
+        showHide('.gif',"none");
+        showHide('.officePhone',"none");
+        showHide('.fax',"none");
+        var text = decodeHtml(logo[1]+name[1]+title[1]+title2[1]+'\n'+phone[1]+email2[1]+office[1]+'SGK\n'+email[1]+sgkinc[1]+amic[1]);
+        var code = css(font,fontBold,"")+makeOnsiteTable(
+          fontBold,
+          font,
+          logo[0],
+          name[0],
+          title[0],
+          title2[0],
+          phone[0],
+          email[0],
+          email2[0],
+          sgkinc[0],
+          office[0],
+          amic[0]);
+        document.getElementById('text').style = "font-family:"+font+",Arial,sans-serif;";
+        document.getElementById('text').value = text;
+        document.getElementById('rawHtml').value = code;
+        document.getElementById('renderDiv').innerHTML = code;
+      }
+      else if (type == "mobile") {
+        var font = "Open Sans Regular";
+        var fontBold = "Open Sans Bold";
+        var logo = getSimpleLogo(fontBold);
+        var name = getName(fontBold);
+        var title = getTitle(font);
+        var phone = getPhone(font);
+        var office = getOffice(font);
+        showHide('.title2',"none");
+        showHide('.email2',"none");
+        showHide('.email',"none");
+        showHide('.gif',"none");
+        showHide('.officePhone',"none");
+        showHide('.fax',"none");
+        var text = decodeHtml(name[1]+title[1]+phone[1]+'\n'+logo[1]+office[1]);
+        var code = css(font,fontBold,fontface())+makeSimpleTable(
+          font,
+          logo[0],
+          name[0],
+          title[0],
+          phone[0],
+          office[0]);
+        document.getElementById('text').style = "font-family:"+font+",Arial,sans-serif;";
+        document.getElementById('text').value = text;
+        document.getElementById('rawHtml').value = code;
+        document.getElementById('renderDiv').innerHTML = code;
+      }
+      else {
+      }
+    }
+  </script>
+
+</body></html>
