@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <!-- saved from url=(0014)about:internet -->
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>SGK Email Signature Generator</title>
+  <title>Email Signature Generator</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <meta name="author" content="Gasper Hafner - SGKinc.com">
+  <meta name="author" content="Gasper Hafner - equator-design.com">
   <style type="text/css">
     html,body {
       padding:0;
@@ -93,18 +93,23 @@
   </select><br>
   <label for="name">Name:</label>
   <input type="text" name="name" id="name" value="Firstname Lastname" onkeyup="makeEmail(); loadCode();"><br>
+  
+  <label for="gender">Gender:</label>
+  <input type="text" name="gender" id="gender" value="Gender Pronouns" onkeyup="loadCode();"><br>
+  
   <label for="title">Title:</label>
   <input type="text" name="title" id="title" value="Title" onkeyup="loadCode();"><br>
+  
   <label for="title2" class="title2" style="display: none;">Title 2:</label>
   <input type="text" name="title2" id="title2" value="Title 2" onkeyup="loadCode();" class="title2" style="display: none;"><br class="title2" style="display: none;">
-  <label for="phone">Phone:</label>
+  <label for="phone">Mobile:</label>
   <input type="text" name="phone" id="phone" value="+00 (0) 000 000 000" onkeyup="loadCode();"><br>
-  <label for="officePhone" class="officePhone" style="display: none;">Office Phone:</label>
+  <label for="officePhone" class="officePhone" style="display: none;">Telephone:</label>
   <input type="text" name="officePhone" id="officePhone" class="officePhone" value="+00 (0) 000 000 000" onkeyup="loadCode();" style="display: none;"><br class="officePhone" style="display: none;">
   <label for="fax" class="fax" style="display: none;">Fax:</label>
   <input type="text" name="fax" id="fax" class="fax" value="+00 (0) 000 000 000" onkeyup="loadCode();" style="display: none;"><br class="fax" style="display: none;">
   <label for="email" class="email" style="display: inline-block;">Email:</label>
-  <input type="text" name="email" id="email" value="firstname.lastname" onkeyup="loadCode();" class="email" style="display: inline-block;"><span class="email" style="display: inline-block;">@sgkinc.com</span><br class="email" style="display: inline-block;">
+  <input type="text" name="email" id="email" value="firstname.lastname" onkeyup="loadCode();" class="email" style="display: inline-block;"><span class="email" style="display: inline-block;">@equator-design.com</span><br class="email" style="display: inline-block;">
   <label for="email2" class="email2" style="display: none;">Email 2:</label>
   <input type="text" name="email2" id="email2" value="firstname.lastname@domain.com" onkeyup="loadCode();" class="email2" style="display: none;"><br class="email2" style="display: none;">
   <label for="office">Office:</label>
@@ -115,7 +120,7 @@
     <option value="schawk">Schawk</option>
     <option value="anthem">Anthem</option>
     <option value="idl">IDL</option>
-    <option value="sgk">SGK INC</option>
+    <option value="sgk">EQT INC</option>
     <option value="brandimage">Brand Image</option>
   </select><br class="gif" style="display: inline-block;"><br>
   <div class="tab">
@@ -130,7 +135,7 @@
 
 
       <!-- OLD HTML -->
-      <!-- <table style="vertical-align:top;border-collapse:collapse;border-spacing:0;border:none;font-family:Open Sans Regular,Arial,sans-serif;font-size:0px;color:#000000;" cellpadding="0" cellspacing="0" border="0" valign="top"><tbody><tr><td style="padding:0;vertical-align:top;text-align:left;height:128px;width:125px;max-width:125px;font-family:Open Sans Regular,Arial,sans-serif;font-size:29px;" width="125" height="128" valign="top"><img src="./SGK Email Signature Generator_files/sgklogo.png" alt="SGK™" style="-ms-interpolation-mode:bicubic;border:0 none;color:#000000;display:block;font-family:Open Sans Bold,Arial,sans-serif;font-size:29px;font-weight:700;width:125px;height:128px;outline:none;text-decoration:none;" width="125" height="128" border="0"></td><td style="width:10px;max-width:10px;font-size:0;" width="10">&nbsp;</td><td style="padding:0;vertical-align:top;text-align:left;height:128px;font-family:Open Sans Regular,Arial,sans-serif;font-size:12px;line-height:16px;" height="128" valign="top"><table style="border-collapse:collapse;border-spacing:0;border:none;vertical-align:top;font-family:Open Sans Regular,Arial,sans-serif;font-size:0p;line-height:16px;" cellpadding="0" cellspacing="0" border="0" valign="top"><tbody><tr><td style="padding:0;vertical-align:top;text-align:left;height:63px;font-family:Open Sans Regular,Arial,sans-serif;font-size:12px;line-height:16px;" height="63" valign="top"><span class="fallback-font-bold" style="color:#000000;font-family:Open Sans Bold,Arial,sans-serif;font-weight:700;font-size:14px;line-height:15px;">Firstname Lastname</span><br><span class="fallback-font-red" style="color:#FF0000;font-family:Open Sans Regular,Arial,sans-serif;font-size:12px;line-height:16px;text-transform:uppercase;">Title</span></td></tr><tr><td style="padding:0;vertical-align:top;text-align:left;line-height:16px;font-family:Open Sans Regular,Arial,sans-serif;font-size:12px;text-decoration:none!important;" valign="top"><span class="fallback-font-bold" style="color:#000000;font-family:Open Sans Bold,Arial,sans-serif;font-weight:700;font-size:12px;">M </span><span class="fallback-font" style="color:#000000!important;font-family:Open Sans Regular,Arial,sans-serif;font-size:12px;line-height:16px;text-decoration:none!important;">+00 (0) 000 000 000</span><br><span class="fallback-font" style="color:#000000!important;font-family:Open Sans Regular,Arial,sans-serif;font-size:12px;line-height:16px;text-decoration:none!important;"><a href="mailto:firstname.lastname@sgkinc.com" style="color:#000000;text-decoration:none!important;"><span class="fallback-font" style="color:#000000!important;text-decoration:none!important;">firstname.lastname@sgkinc.com</span></a></span><br><span class="fallback-font-bold" style="color:#000000!important;font-family:Open Sans Bold,Arial,sans-serif;font-size:12px;line-height:16px;text-decoration:none!important;font-weight:700;"><a href="https://sgkinc.com/" target="_blank" style="color:#000000;text-decoration:none!important;font-weight:700;"><span class="fallback-font" style="color:#000000!important;text-decoration:none!important;">sgkinc.com</span></a></span><br><span class="fallback-font" style="color:#000000;font-family:Open Sans Regular,Arial,sans-serif;font-size:12px;line-height:16px;text-decoration:none!important;">Office address | City, Postcode, Country</span><br><br><span class="fallback-font" style="color:#000000;font-family:Open Sans Regular,Arial,sans-serif;font-size:10px;line-height:12px;">A Matthews International Company.</span><br></td></tr></tbody></table></td></tr></tbody></table> -->
+      <!-- <table style="vertical-align:top;border-collapse:collapse;border-spacing:0;border:none;font-family:Open Sans Regular,Arial,sans-serif;font-size:0px;color:#000000;" cellpadding="0" cellspacing="0" border="0" valign="top"><tbody><tr><td style="padding:0;vertical-align:top;text-align:left;height:128px;width:125px;max-width:125px;font-family:Open Sans Regular,Arial,sans-serif;font-size:29px;" width="125" height="128" valign="top"><img src="./SGK Email Signature Generator_files/sgklogo.png" alt="SGK™" style="-ms-interpolation-mode:bicubic;border:0 none;color:#000000;display:block;font-family:Open Sans Bold,Arial,sans-serif;font-size:29px;font-weight:700;width:125px;height:128px;outline:none;text-decoration:none;" width="125" height="128" border="0"></td><td style="width:10px;max-width:10px;font-size:0;" width="10">&nbsp;</td><td style="padding:0;vertical-align:top;text-align:left;height:128px;font-family:Open Sans Regular,Arial,sans-serif;font-size:12px;line-height:16px;" height="128" valign="top"><table style="border-collapse:collapse;border-spacing:0;border:none;vertical-align:top;font-family:Open Sans Regular,Arial,sans-serif;font-size:0p;line-height:16px;" cellpadding="0" cellspacing="0" border="0" valign="top"><tbody><tr><td style="padding:0;vertical-align:top;text-align:left;height:63px;font-family:Open Sans Regular,Arial,sans-serif;font-size:12px;line-height:16px;" height="63" valign="top"><span class="fallback-font-bold" style="color:#000000;font-family:Open Sans Bold,Arial,sans-serif;font-weight:700;font-size:14px;line-height:15px;">Firstname Lastname</span><br><span class="fallback-font-red" style="color:#FF0000;font-family:Open Sans Regular,Arial,sans-serif;font-size:12px;line-height:16px;text-transform:uppercase;">Title</span></td></tr><tr><td style="padding:0;vertical-align:top;text-align:left;line-height:16px;font-family:Open Sans Regular,Arial,sans-serif;font-size:12px;text-decoration:none!important;" valign="top"><span class="fallback-font-bold" style="color:#000000;font-family:Open Sans Bold,Arial,sans-serif;font-weight:700;font-size:12px;">M </span><span class="fallback-font" style="color:#000000!important;font-family:Open Sans Regular,Arial,sans-serif;font-size:12px;line-height:16px;text-decoration:none!important;">+00 (0) 000 000 000</span><br><span class="fallback-font" style="color:#000000!important;font-family:Open Sans Regular,Arial,sans-serif;font-size:12px;line-height:16px;text-decoration:none!important;"><a href="mailto:firstname.lastname@equator-design.com" style="color:#000000;text-decoration:none!important;"><span class="fallback-font" style="color:#000000!important;text-decoration:none!important;">firstname.lastname@equator-design.com</span></a></span><br><span class="fallback-font-bold" style="color:#000000!important;font-family:Open Sans Bold,Arial,sans-serif;font-size:12px;line-height:16px;text-decoration:none!important;font-weight:700;"><a href="https://equator-design.com/" target="_blank" style="color:#000000;text-decoration:none!important;font-weight:700;"><span class="fallback-font" style="color:#000000!important;text-decoration:none!important;">equator-design.com</span></a></span><br><span class="fallback-font" style="color:#000000;font-family:Open Sans Regular,Arial,sans-serif;font-size:12px;line-height:16px;text-decoration:none!important;">Office address | City, Postcode, Country</span><br><br><span class="fallback-font" style="color:#000000;font-family:Open Sans Regular,Arial,sans-serif;font-size:10px;line-height:12px;">A Matthews International Company.</span><br></td></tr></tbody></table></td></tr></tbody></table> -->
       <!-- END OLD HTML -->
 
       <!-- NEW HTML -->
@@ -143,7 +148,7 @@
     <tr>
       <td style="min-width: 20px; width: 20px;">&nbsp;</td>
       <td style="padding:0;vertical-align:top;text-align:left;height:auto;width:130px;max-width:130px;font-family:Open Sans Regular,Arial,sans-serif;font-size:29px;" width="130" height="128" valign="top">
-        <img src="./EmailSignatureGeneratorfiles/logo.png" alt="SGK™" style="-ms-interpolation-mode:bicubic;border:0 none;color:#000000;display:block;font-family:Open Sans Bold,Arial,sans-serif;font-size:29px;font-weight:700;width:130px;height:auto;outline:none;text-decoration:none;" width="130" height="128" border="0">
+        <img src="./images/logo.png" alt="EQT™" style="-ms-interpolation-mode:bicubic;border:0 none;color:#000000;display:block;font-family:Open Sans Bold,Arial,sans-serif;font-size:29px;font-weight:700;width:130px;height:auto;outline:none;text-decoration:none;" width="130" height="128" border="0">
       </td>
       <!-- <td style="width:10px;max-width:10px;font-size:0;" width="10">&nbsp;</td> -->
       </tr>
@@ -158,26 +163,26 @@
           <tbody>
             <tr>
               <td style="padding:0;vertical-align:top;text-align:left;height:auto;font-family:Open Sans Bold,Arial,sans-serif;font-weight:700;font-size:14px;line-height:20px;color: #FF0000;" valign="top">
-                BERNADETTE SHEPPARD
-                <span class="fallback-font-bold" style="display: inline-block;color:#000000;font-family:Open Sans,Arial,sans-serif;font-weight:400;font-size:12px;line-height:20px;">(SHE/HER)</span>
+                fistname lastname
+                <span class="fallback-font-bold" style="display: inline-block;color:#000000;font-family:Open Sans,Arial,sans-serif;font-weight:400;font-size:12px;line-height:20px;">(gender pronouns)</span>
                 <br>
-                <span class="fallback-font-red" style="color:#000;font-family:Open Sans Bold Regular,Arial,sans-serif;font-size:12px;line-height:20px;font-weight:700;text-transform:uppercase;">MANAGER, CREATIVE OPERATIONS</span>
+                <span class="fallback-font-red" style="color:#000;font-family:Open Sans Bold Regular,Arial,sans-serif;font-size:12px;line-height:20px;font-weight:700;text-transform:uppercase;">title</span>
               </td>
             </tr>
             <tr>
               <td style="padding:0;vertical-align:top;text-align:left;line-height:16px;font-family:Open Sans Regular,Arial,sans-serif;font-size:12px;text-decoration:none!important;" valign="top">
                 <span class="fallback-font" style="color:#000000!important;font-family:Open Sans Regular,Arial,sans-serif;font-size:12px;line-height:16px;text-decoration:none!important;">
                   <a href="mailto:bernadette.sheppard@equator-design.com" style="color:#000000;text-decoration:none!important;">
-                    <span class="fallback-font" style="color:#000000!important;text-decoration:none!important;">bernadette.sheppard@equator-design.com</span>
+                    <span class="fallback-font" style="color:#000000!important;text-decoration:none!important;">email@equator-design.com</span>
                   </a>
                 </span><br><br>
                 <span class="fallback-font-bold" style="color:#000000;font-family:Open Sans Bold,Arial,sans-serif;font-weight:400;font-size:12px;">TEL: </span>
-                <span class="fallback-font" style="color:#000000!important;font-family:Open Sans Regular,Arial,sans-serif;font-size:12px;line-height:16px;text-decoration:none!important;">+1 905 219 1654</span>
+                <span class="fallback-font" style="color:#000000!important;font-family:Open Sans Regular,Arial,sans-serif;font-size:12px;line-height:16px;text-decoration:none!important;">OffinePhone</span>
                 <span class="fallback-font-bold" style="color:#000000;font-family:Open Sans Bold,Arial,sans-serif;font-weight:400;font-size:12px;">MOB: </span>
-                <span class="fallback-font" style="color:#000000!important;font-family:Open Sans Regular,Arial,sans-serif;font-size:12px;line-height:16px;text-decoration:none!important;">+1 416 704 1141</span>
+                <span class="fallback-font" style="color:#000000!important;font-family:Open Sans Regular,Arial,sans-serif;font-size:12px;line-height:16px;text-decoration:none!important;">Phone</span>
                 <br>
                 <br>
-                <span class="fallback-font" style="color:#000000;font-family:Open Sans Regular,Arial,sans-serif;font-size:12px;line-height:16px;text-decoration:none!important;">1620 TECH AVENUE, MISSISSAUGA,<br> ON L4W 5P4, CANADA</span>
+                <span class="fallback-font" style="color:#000000;font-family:Open Sans Regular,Arial,sans-serif;font-size:12px;line-height:16px;text-decoration:none!important;">Address</span>
                 <br>
                 <br>
                 <span class="fallback-font-bold" style="color:#000000!important;font-family:Open Sans Bold,Arial,sans-serif;font-size:12px;line-height:16px;text-decoration:none!important;font-weight:700;">
@@ -191,7 +196,7 @@
                 <table style="border-collapse:collapse;border-spacing:0;border:none;vertical-align:top;font-family:Open Sans Regular,Arial,sans-serif;font-size:0p;line-height:16px;" cellpadding="0" cellspacing="0" border="0" valign="top">
                   <tr>
                     <td style="width: 70px;">
-                      <img src="./EmailSignatureGeneratorfiles/logo.png" alt="" style="width: 70px;">
+                      <img src="./images/logo.png" alt="" style="width: 70px;">
                     </td>
                     <td style="width: 20px;"></td>
                     <td style="border-right: 1px solid #000;"></td>
@@ -270,15 +275,25 @@
         return `@font-face{font-family:'Open Sans';font-style:normal;font-weight:400;src:local('Open Sans Regular'),local('OpenSans-Regular'),url(https://fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-UFVZ0bf8pkAg.woff2)format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Open Sans';font-style:normal;font-weight:700;src:local('Open Sans Bold'),local('OpenSans-Bold'),url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN7rgOUuhpKKSTjw.woff2)format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}`;
       }
       function getLogo(fontBold) {
-        return [`<img src="images/sgklogo.png"alt="SGK&#x2122;"style="-ms-interpolation-mode:bicubic;border:0 none;color:#000000;display:block;font-family:`+fontBold+`,Arial,sans-serif;font-size:29px;font-weight:700;width:125px;height:128px;outline:none;text-decoration:none;"width="125"height="128"border="0">`,'SGK&#x2122;\n\n'];
+        return [`<img src="images/logo.png"alt="SGK&#x2122;"style="-ms-interpolation-mode:bicubic;border:0 none;color:#000000;display:block;font-family:`+fontBold+`,Arial,sans-serif;font-size:29px;font-weight:700;width:125px;height:128px;outline:none;text-decoration:none;"width="125"height="128"border="0">`,'SGK&#x2122;\n\n'];
       }
       function getSimpleLogo(fontBold) {
-        return [`<br><img src="images/sgklogo.png"alt="SGK&#x2122;"style="-ms-interpolation-mode:bicubic;border:0 none;color:#000000;display:inline-block;font-family:`+fontBold+`,Arial,sans-serif;font-size:23px;font-weight:700;width:64px;height:65px;outline:none;text-decoration:none;"width="64"height="65"border="0"><br><br>`,'SGK&#x2122;\n\n'];
+        return [`<br><img src="images/logo.png"alt="SGK&#x2122;"style="-ms-interpolation-mode:bicubic;border:0 none;color:#000000;display:inline-block;font-family:`+fontBold+`,Arial,sans-serif;font-size:23px;font-weight:700;width:64px;height:65px;outline:none;text-decoration:none;"width="64"height="65"border="0"><br><br>`,'SGK&#x2122;\n\n'];
       }
       function getName(fontBold) {
         var name = document.getElementById('name').value.trim();
         if (name) {
-          return [`<span class="fallback-font-bold"style="color:#000000;font-family:`+fontBold+`,Arial,sans-serif;font-weight:700;font-size:14px;line-height:15px;">`+name+`</span><br>`,name+'\n'];
+          return [name,name+'\n'];
+        }
+        else {
+          return ["",""];
+        }
+      }
+	  function getGender(font) {
+        var gender = document.getElementById('gender').value.trim();
+		
+        if (gender) {
+          return [gender,gender.toUpperCase()+'\n'];
         }
         else {
           return ["",""];
@@ -287,7 +302,7 @@
       function getTitle(font) {
         var title = document.getElementById('title').value.trim();
         if (title) {
-          return [`<span class="fallback-font-red"style="color:#FF0000;font-family:`+font+`,Arial,sans-serif;font-size:12px;line-height:16px;text-transform:uppercase;">`+title+`</span>`,title.toUpperCase()+'\n'];
+          return [`<br/><span class="fallback-font-red" style="color:#000;font-family:Open Sans Bold Regular,Arial,sans-serif;font-size:12px;line-height:20px;font-weight:700;text-transform:uppercase;">`+title+`</span>`,title.toUpperCase()+'\n'];
         }
         else {
           return ["",""];
@@ -305,7 +320,7 @@
       function getPhone(font) {
         var phone = document.getElementById('phone').value.trim();
         if (phone) {
-          return [`<span class="fallback-font-bold"style="color:#000000;font-family:`+fontBold+`,Arial,sans-serif;font-weight:700;font-size:12px;">M </span><span class="fallback-font"style="color:#000000!important;font-family:`+font+`,Arial,sans-serif;font-size:12px;line-height:16px;text-decoration:none!important;">`+phone+`</span><br>`,phone+'\n'];
+          return [`<span class="fallback-font-bold"style="color:#000000;font-family:`+fontBold+`,Arial,sans-serif;font-weight:700;font-size:12px;">MOB:</span><span class="fallback-font"style="color:#000000!important;font-family:`+font+`,Arial,sans-serif;font-size:12px;line-height:16px;text-decoration:none!important;">`+phone+`</span><br>`,phone+'\n'];
         }
         else {
           return ["",""];
@@ -314,7 +329,7 @@
       function getOfficePhone(font) {
         var officePhone = document.getElementById('officePhone').value.trim();
         if (officePhone) {
-          return [`<span class="fallback-font-bold"style="color:#000000;font-family:`+fontBold+`,Arial,sans-serif;font-weight:700;font-size:12px;">O </span><span class="fallback-font"style="color:#000000!important;font-family:`+font+`,Arial,sans-serif;font-size:12px;line-height:16px;text-decoration:none!important;">`+officePhone+`</span><br>`,officePhone+'\n'];
+          return [`<span class="fallback-font-bold"style="color:#000000;font-family:`+fontBold+`,Arial,sans-serif;font-weight:700;font-size:12px;">TEL: </span><span class="fallback-font"style="color:#000000!important;font-family:`+font+`,Arial,sans-serif;font-size:12px;line-height:16px;text-decoration:none!important;">`+officePhone+`</span><br>`,officePhone+'\n'];
         }
         else {
           return ["",""];
@@ -332,7 +347,7 @@
       function getEmail(font) {
         var email = document.getElementById('email').value.trim();
         if (email) {
-          return [`<span class="fallback-font"style="color:#000000!important;font-family:`+font+`,Arial,sans-serif;font-size:12px;line-height:16px;text-decoration:none!important;"><a href="mailto:`+email+`@sgkinc.com"style="color:#000000;text-decoration:none!important;"><span class="fallback-font"style="color:#000000!important;text-decoration:none!important;">`+email+`@sgkinc.com</span></a></span><br>`,email+'@sgkinc.com\n'];
+          return [`<span class="fallback-font"style="color:#000000!important;font-family:`+font+`,Arial,sans-serif;font-size:12px;line-height:16px;text-decoration:none!important;"><a href="mailto:`+email+`@equator-design.com"style="color:#000000;text-decoration:none!important;"><span class="fallback-font"style="color:#000000!important;text-decoration:none!important;">`+email+`@equator-design.com</span></a></span><br>`,email+'@equator-design.com\n'];
         }
         else {
           return ["",""];
@@ -350,14 +365,14 @@
       function getOffice(font) {
         var office = document.getElementById('office').value.trim();
         if (office) {
-          return [`<span class="fallback-font"style="color:#000000;font-family:`+font+`,Arial,sans-serif;font-size:12px;line-height:16px;text-decoration:none!important;">`+office+`</span>`,office+'\n\n'];
+          return [`<span class="fallback-font"style="color:#000000;font-family:`+font+`,Arial,sans-serif;font-size:12px;line-height:16px;text-decoration:none!important;">`+office.replace('|','\n')+`</span>`,office.replace('|','\n')+'\n\n'];
         }
         else {
           return ["",""];
         }
       }
       function getSgkInc(fontBold) {
-        return [`<span class="fallback-font-bold"style="color:#000000!important;font-family:`+fontBold+`,Arial,sans-serif;font-size:12px;line-height:16px;text-decoration:none!important;font-weight:700;"><a href="https://sgkinc.com"target="_blank"style="color:#000000;text-decoration:none!important;font-weight:700;"><span class="fallback-font"style="color:#000000!important;text-decoration:none!important;">sgkinc.com</span></a></span><br>`,'https://sgkinc.com\n'];
+        return [`<br/><span class="fallback-font-bold"style="color:#000000!important;font-family:`+fontBold+`,Arial,sans-serif;font-size:12px;line-height:16px;text-decoration:none!important;font-weight:700;"><a href="https://equator-design.com"target="_blank"style="color:#000000;text-decoration:none!important;font-weight:700;"><span class="fallback-font"style="color:#000000!important;text-decoration:none!important;">equator-design.com</span></a></span><br>`,'https://equator-design.com\n'];
       }
       function getAmic() {
         return [`<span class="fallback-font"style="color:#000000;font-family:`+font+`,Arial,sans-serif;font-size:10px;line-height:12px;">A Matthews International Company.</span><br>`,'A Matthews International Company.\n'];
@@ -386,8 +401,78 @@
           return ["",""];
         }
       }
-      function makeTable(font,logo,name,title,phone,email,email2,sgkinc,office,amic,gif,icons) {
-        return `<table style="vertical-align:top;border-collapse:collapse;border-spacing:0;border:none;font-family:`+font+`,Arial,sans-serif;font-size:0px;color:#000000;"cellpadding="0"cellspacing="0"border="0"valign="top"><tr><td style="padding:0;vertical-align:top;text-align:left;height:128px;width:125px;max-width:125px;font-family:`+font+`,Arial,sans-serif;font-size:29px;"width="125"height="128"valign="top">`+logo+`</td><td style="width:10px;max-width:10px;font-size:0;"width="10">&nbsp;</td><td style="padding:0;vertical-align:top;text-align:left;height:128px;font-family:`+font+`,Arial,sans-serif;font-size:12px;line-height:16px;"height="128"valign="top"><table style="border-collapse:collapse;border-spacing:0;border:none;vertical-align:top;font-family:`+font+`,Arial,sans-serif;font-size:0p;line-height:16px;"cellpadding="0"cellspacing="0"border="0"valign="top"><tr><td style="padding:0;vertical-align:top;text-align:left;height:63px;font-family:`+font+`,Arial,sans-serif;font-size:12px;line-height:16px;"height="63"valign="top">`+name+title+`</td></tr><tr><td style="padding:0;vertical-align:top;text-align:left;line-height:16px;font-family:`+font+`,Arial,sans-serif;font-size:12px;text-decoration:none!important;"valign="top">`+phone+email+sgkinc+office+`<br><br>`+icons+amic+`</td></tr></table></td></tr>`+gif+`</table>`;
+      function makeTable(font,logo,name,gender,title,phone,officePhone,email,email2,sgkinc,office,amic,gif,icons) {
+        <!--return `<table style="vertical-align:top;border-collapse:collapse;border-spacing:0;border:none;font-family:`+font+`,Arial,sans-serif;font-size:0px;color:#000000;"cellpadding="0"cellspacing="0"border="0"valign="top"><tr><td style="padding:0;vertical-align:top;text-align:left;height:128px;width:125px;max-width:125px;font-family:`+font+`,Arial,sans-serif;font-size:29px;"width="125"height="128"valign="top">`+logo+`</td><td style="width:10px;max-width:10px;font-size:0;"width="10">&nbsp;</td><td style="padding:0;vertical-align:top;text-align:left;height:128px;font-family:`+font+`,Arial,sans-serif;font-size:12px;line-height:16px;"height="128"valign="top"><table style="border-collapse:collapse;border-spacing:0;border:none;vertical-align:top;font-family:`+font+`,Arial,sans-serif;font-size:0p;line-height:16px;"cellpadding="0"cellspacing="0"border="0"valign="top"><tr><td style="padding:0;vertical-align:top;text-align:left;height:63px;font-family:`+font+`,Arial,sans-serif;font-size:12px;line-height:16px;"height="63"valign="top">`+name+title+`</td></tr><tr><td style="padding:0;vertical-align:top;text-align:left;line-height:16px;font-family:`+font+`,Arial,sans-serif;font-size:12px;text-decoration:none!important;"valign="top">`+phone+email+sgkinc+office+`<br><br>`+icons+amic+`</td></tr></table></td></tr>`+gif+`</table>`;-->
+		
+		 return `<table style="width: 300px; vertical-align:top;border-collapse:collapse;border-spacing:0;border:none;font-family:Open Sans Regular,Arial,sans-serif;font-size:0px;color:#000000;" cellpadding="0" cellspacing="0" border="0" valign="top">
+  <tbody>
+    <tr>
+        <td style="min-width: 20px; width: 20px;">&nbsp;</td>
+        <td style="height: 20px;">&nbsp;</td>
+      </tr>
+    <tr>
+      <td style="min-width: 20px; width: 20px;">&nbsp;</td>
+      <td style="padding:0;vertical-align:top;text-align:left;height:auto;width:130px;max-width:130px;font-family:Open Sans Regular,Arial,sans-serif;font-size:29px;" width="130" height="128" valign="top">
+        `+logo+`
+      </td>
+      <!-- <td style="width:10px;max-width:10px;font-size:0;" width="10">&nbsp;</td> -->
+      </tr>
+      <tr>
+        <td style="min-width: 20px; width: 20px;">&nbsp;</td>
+        <td style="height: 20px;">&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="min-width: 20px; width: 20px;">&nbsp;</td>
+      <td style="padding:0;vertical-align:top;text-align:left;font-family:Open Sans Regular,Arial,sans-serif;font-size:12px;line-height:16px;" height="128" valign="top">
+        <table style="border-collapse:collapse;border-spacing:0;border:none;vertical-align:top;font-family:Open Sans Regular,Arial,sans-serif;font-size:0p;line-height:16px;" cellpadding="0" cellspacing="0" border="0" valign="top">
+          <tbody>
+			<tr>
+              <td style="padding:0;vertical-align:top;text-align:left;height:auto;font-family:Open Sans Bold,Arial,sans-serif;font-weight:700;font-size:14px;line-height:20px;color: #FF0000;text-transform:uppercase;" valign="top">
+                `+name+`<span class="fallback-font" style="color:#000000;font-family:Open Sans,Arial,sans-serif;font-weight:400;font-size:12px;text-transform:uppercase;">  (`+gender+`)
+               
+                <span class="fallback-font-red" style="color:#000;font-family:Open Sans Bold Regular,Arial,sans-serif;font-size:12px;line-height:20px;font-weight:700;text-transform:uppercase;">`+title+`</span>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding:0;vertical-align:top;text-align:left;line-height:16px;font-family:Open Sans Regular,Arial,sans-serif;font-size:12px;text-decoration:none!important;" valign="top">
+			  `+email+`<br>
+                <span class="fallback-font-bold" style="color:#000000;font-family:Open Sans Bold,Arial,sans-serif;font-weight:400;font-size:12px;"></span>
+                `+officePhone+`
+                <span class="fallback-font-bold" style="color:#000000;font-family:Open Sans Bold,Arial,sans-serif;font-weight:400;font-size:12px;"></span>
+                `+phone+`
+                
+				`+office+`
+                <br>
+                <br>
+                <span class="fallback-font-bold" style="color:#000000!important;font-family:Open Sans Bold,Arial,sans-serif;font-size:12px;line-height:16px;text-decoration:none!important;font-weight:700;">
+                  <a href="https://equator-design.com/" target="_blank" style="color:#000000;text-decoration:none!important;font-weight:700;">
+                    <span class="fallback-font" style="color:#000000!important;text-decoration:none!important;">EQUATOR-DESIGN.COM</span>
+                  </a>
+                </span>
+                <br>
+                <br>
+                <table style="border-collapse:collapse;border-spacing:0;border:none;vertical-align:top;font-family:Open Sans Regular,Arial,sans-serif;font-size:0p;line-height:16px;" cellpadding="0" cellspacing="0" border="0" valign="top">
+                  <tr>
+                    <td style="width: 70px;">
+                      <img src="./images/logo.png" alt="" style="width: 70px;">
+                    </td>
+                    <td style="width: 20px;"></td>
+                    <td style="border-right: 1px solid #000;"></td>
+                    <td style="width: 20px;"></td>
+                    <td style="color:#000000!important;font-family:Open Sans Bold,Arial,sans-serif;font-size:12px;line-height:16px;text-decoration:none!important;font-weight:700;">Equator is part of SGK,<br><br>
+                      <span style="color:#000000!important;font-family:Open Sans,Arial,sans-serif;font-size:12px;line-height:16px;text-decoration:none!important;font-weight:400;">A Matthews International company.</span></td>
+                  </tr>
+                </table>
+                <br>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>`;
+
       }
       function makeDetailedTable(font,logo,name,title,phone,officePhone,fax,email,email2,sgkinc,office,amic,gif,icons) {
         return `<table style="vertical-align:top;border-collapse:collapse;border-spacing:0;border:none;font-family:`+font+`,Arial,sans-serif;font-size:0px;color:#000000;"cellpadding="0"cellspacing="0"border="0"valign="top"><tr><td style="padding:0;vertical-align:top;text-align:left;height:128px;width:125px;max-width:125px;font-family:`+font+`,Arial,sans-serif;font-size:29px;"width="125"height="128"valign="top">`+logo+`</td><td style="width:10px;max-width:10px;font-size:0;"width="10">&nbsp;</td><td style="padding:0;vertical-align:top;text-align:left;height:128px;font-family:`+font+`,Arial,sans-serif;font-size:12px;line-height:16px;"height="128"valign="top"><table style="border-collapse:collapse;border-spacing:0;border:none;vertical-align:top;font-family:`+font+`,Arial,sans-serif;font-size:0p;line-height:16px;"cellpadding="0"cellspacing="0"border="0"valign="top"><tr><td style="padding:0;vertical-align:top;text-align:left;height:63px;font-family:`+font+`,Arial,sans-serif;font-size:12px;line-height:16px;"height="63"valign="top">`+name+title+`</td></tr><tr><td style="padding:0;vertical-align:top;text-align:left;line-height:16px;font-family:`+font+`,Arial,sans-serif;font-size:12px;text-decoration:none!important;"valign="top">`+phone+officePhone+fax+email+sgkinc+office+`<br><br>`+icons+amic+`</td></tr></table></td></tr>`+gif+`</table>`;
@@ -399,7 +484,7 @@
         return `<table style="border-collapse:collapse;border-spacing:0;border:none;vertical-align:top;font-family:`+font+`,Arial,sans-serif;font-size:0px;line-height:16px;"cellpadding="0"cellspacing="0"border="0"valign="top"><tr><td style="padding:0;vertical-align:top;text-align:left;font-family:`+font+`,Arial,sans-serif;font-size:12px;line-height:16px;"valign="top"><p style="line-height:13px;margin:0;">`+name+title+`<br>`+phone+logo+office+`</p></td></tr></table>`;
       }
       function makeOnsiteTable(fontBold,font,logo,name,title,title2,phone,email,email2,sgkinc,office,amic) {
-        return `<table style="vertical-align:top;border-collapse:collapse;border-spacing:0;border:none;font-family:`+font+`,Arial,sans-serif;font-size:0px;color:#000000;"cellpadding="0"cellspacing="0"border="0"valign="top"><tr><td style="padding:0;vertical-align:top;text-align:left;height:128px;width:125px;max-width:125px;font-family:`+font+`,Arial,sans-serif;font-size:29px;"width="125"height="128"valign="top">`+logo+`</td><td style="width:10px;max-width:10px;font-size:0;"width="10">&nbsp;</td><td style="padding:0;vertical-align:top;text-align:left;height:128px;font-family:`+font+`,Arial,sans-serif;font-size:12px;line-height:16px;"height="128"valign="top"><table style="border-collapse:collapse;border-spacing:0;border:none;vertical-align:top;font-family:`+font+`,Arial,sans-serif;font-size:0px;line-height:16px;"cellpadding="0"cellspacing="0"border="0"valign="top"><tr><td style="padding:0;vertical-align:top;text-align:left;height:63px;font-family:`+font+`,Arial,sans-serif;font-size:12px;line-height:16px;"height="63"valign="top">`+name+title+`<br>`+title2+`</td></tr><tr><td style="padding:0;vertical-align:top;text-align:left;line-height:16px;font-family:`+font+`,Arial,sans-serif;font-size:12px;text-decoration:none!important;"valign="top">`+phone+email2+office+`<br><br><span class="fallback-font-bold"style="color:#000000!important;font-family:`+fontBold+`,Arial,sans-serif;font-size:12px;line-height:16px;font-weight:700;text-decoration:none!important;">SGK</span><br>`+email+sgkinc+amic+`</td></tr></table></td></tr></table>`;
+        return `<table style="vertical-align:top;border-collapse:collapse;border-spacing:0;border:none;font-family:`+font+`,Arial,sans-serif;font-size:0px;color:#000000;"cellpadding="0"cellspacing="0"border="0"valign="top"><tr><td style="padding:0;vertical-align:top;text-align:left;height:128px;width:125px;max-width:125px;font-family:`+font+`,Arial,sans-serif;font-size:29px;"width="125"height="128"valign="top">`+logo+`</td><td style="width:10px;max-width:10px;font-size:0;"width="10">&nbsp;</td><td style="padding:0;vertical-align:top;text-align:left;height:128px;font-family:`+font+`,Arial,sans-serif;font-size:12px;line-height:16px;"height="128"valign="top"><table style="border-collapse:collapse;border-spacing:0;border:none;vertical-align:top;font-family:`+font+`,Arial,sans-serif;font-size:0px;line-height:16px;"cellpadding="0"cellspacing="0"border="0"valign="top"><tr><td style="padding:0;vertical-align:top;text-align:left;height:63px;font-family:`+font+`,Arial,sans-serif;font-size:12px;line-height:16px;"height="63"valign="top">`+name+title+`<br>`+title2+`</td></tr><tr><td style="padding:0;vertical-align:top;text-align:left;line-height:16px;font-family:`+font+`,Arial,sans-serif;font-size:12px;text-decoration:none!important;"valign="top">`+phone+email2+office.replace('|','\n')+`<br><br><span class="fallback-font-bold"style="color:#000000!important;font-family:`+fontBold+`,Arial,sans-serif;font-size:12px;line-height:16px;font-weight:700;text-decoration:none!important;">SGK</span><br>`+email+sgkinc+amic+`</td></tr></table></td></tr></table>`;
       }
       var type = document.getElementById('type').value;
       if (type == "brand") {
@@ -408,8 +493,10 @@
         var gif = getGif(fontBold);
         var logo = getLogo(fontBold);
         var name = getName(fontBold);
+		var genderpronouns = getGender(font);
         var title = getTitle(font);
         var phone = getPhone(font);
+		var officePhone = getOfficePhone(font);
         var email = getEmail(font);
         var office = getOffice(font);
         var sgkinc = getSgkInc(fontBold);
@@ -418,15 +505,18 @@
         showHide('.email2',"none");
         showHide('.email',"inline-block");
         showHide('.gif',"inline-block");
-        showHide('.officePhone',"none");
+        showHide('.officePhone',"inline-block");
         showHide('.fax',"none");
-        var text = decodeHtml(logo[1]+name[1]+title[1]+'\n'+phone[1]+email[1]+sgkinc[1]+office[1]+amic[1]+'\n'+gif[1]);
+        var text = decodeHtml(logo[1]+name[1]+genderpronouns[1]+title[1]+'\n'+phone[1]+officePhone[1]+email[1]+sgkinc[1]+office[1]+amic[1]+'\n'+gif[1]);
+		
         var code = css(font,fontBold,fontface())+makeTable(
           font,
           logo[0],
           name[0],
+		  genderpronouns[0],
           title[0],
           phone[0],
+		  officePhone[0],
           email[0],
           "",
           sgkinc[0],
@@ -444,7 +534,8 @@
         var fontBold = "Open Sans Bold";
         var gif = getGif(fontBold);
         var logo = getLogo(fontBold);
-        var name = getName(fontBold);
+        var name = getName(fontBold);		
+		var genderpronouns = getGender(fontBold);
         var title = getTitle(font);
         var phone = getPhone(font);
         var officePhone = getOfficePhone(font);
@@ -459,11 +550,12 @@
         showHide('.fax',"inline-block");
         showHide('.email',"inline-block");
         showHide('.gif',"inline-block");
-        var text = decodeHtml(logo[1]+name[1]+title[1]+'\n'+phone[1]+officePhone[1]+fax[1]+email[1]+sgkinc[1]+office[1]+amic[1]+'\n'+gif[1]);
+        var text = decodeHtml(logo[1]+name[1]+genderpronouns[1]+title[1]+'\n'+phone[1]+officePhone[1]+fax[1]+email[1]+sgkinc[1]+office[1]+amic[1]+'\n'+gif[1]);
         var code = css(font,fontBold,fontface())+makeDetailedTable(
           font,
           logo[0],
           name[0],
+		  genderpronouns[0],
           title[0],
           phone[0],
           officePhone[0],
@@ -487,6 +579,7 @@
         var icons = icons(font);
         var logo = getLogo(fontBold);
         var name = getName(fontBold);
+		var genderpronouns = getGender(fontBold);
         var title = getTitle(font);
         var phone = getPhone(font);
         var email = getEmail(font);
@@ -499,11 +592,12 @@
         showHide('.gif',"inline-block");
         showHide('.officePhone',"none");
         showHide('.fax',"none");
-        var text = decodeHtml(logo[1]+name[1]+title[1]+'\n'+phone[1]+email[1]+sgkinc[1]+office[1]+amic[1]+'\n'+gif[1]);
+        var text = decodeHtml(logo[1]+name[1]+genderpronouns[1]+title[1]+'\n'+phone[1]+email[1]+sgkinc[1]+office[1]+amic[1]+'\n'+gif[1]);
         var code = css(font,fontBold,"")+makeVerdanaTable(
           font,
           logo[0],
           name[0],
+		  genderpronouns[0],
           title[0],
           "",
           phone[0],
@@ -524,6 +618,7 @@
         var fontBold = "Open Sans Bold";
         var logo = getLogo(fontBold);
         var name = getName(fontBold);
+		var genderpronouns = getGender(fontBold);
         var title = getTitle(font);
         var title2 = getTitle2(font);
         var phone = getPhone(font);
@@ -538,12 +633,13 @@
         showHide('.gif',"none");
         showHide('.officePhone',"none");
         showHide('.fax',"none");
-        var text = decodeHtml(logo[1]+name[1]+title[1]+title2[1]+'\n'+phone[1]+email2[1]+office[1]+'SGK\n'+email[1]+sgkinc[1]+amic[1]);
+        var text = decodeHtml(logo[1]+name[1]+genderpronouns[1]+title[1]+title2[1]+'\n'+phone[1]+email2[1]+office[1]+'SGK\n'+email[1]+sgkinc[1]+amic[1]);
         var code = css(font,fontBold,fontface())+makeOnsiteTable(
           fontBold,
           font,
           logo[0],
           name[0],
+		  genderpronouns[0],
           title[0],
           title2[0],
           phone[0],
@@ -562,6 +658,7 @@
         var fontBold = "Verdana";
         var logo = getLogo(fontBold);
         var name = getName(fontBold);
+		var genderpronouns = getGender(fontBold);
         var title = getTitle(font);
         var title2 = getTitle2(font);
         var phone = getPhone(font);
@@ -576,12 +673,13 @@
         showHide('.gif',"none");
         showHide('.officePhone',"none");
         showHide('.fax',"none");
-        var text = decodeHtml(logo[1]+name[1]+title[1]+title2[1]+'\n'+phone[1]+email2[1]+office[1]+'SGK\n'+email[1]+sgkinc[1]+amic[1]);
+        var text = decodeHtml(logo[1]+name[1]+genderpronouns[1]+title[1]+title2[1]+'\n'+phone[1]+email2[1]+office[1]+'SGK\n'+email[1]+sgkinc[1]+amic[1]);
         var code = css(font,fontBold,"")+makeOnsiteTable(
           fontBold,
           font,
           logo[0],
           name[0],
+		  genderpronouns[0],
           title[0],
           title2[0],
           phone[0],
@@ -600,6 +698,7 @@
         var fontBold = "Open Sans Bold";
         var logo = getSimpleLogo(fontBold);
         var name = getName(fontBold);
+		var genderpronouns = getGender(fontBold);
         var title = getTitle(font);
         var phone = getPhone(font);
         var office = getOffice(font);
@@ -609,11 +708,12 @@
         showHide('.gif',"none");
         showHide('.officePhone',"none");
         showHide('.fax',"none");
-        var text = decodeHtml(name[1]+title[1]+phone[1]+'\n'+logo[1]+office[1]);
+        var text = decodeHtml(name[1]+genderpronouns[1]+title[1]+phone[1]+'\n'+logo[1]+office[1]);
         var code = css(font,fontBold,fontface())+makeSimpleTable(
           font,
           logo[0],
           name[0],
+		  genderpronouns[0],
           title[0],
           phone[0],
           office[0]);
