@@ -19,7 +19,7 @@
     input {
       width: 300px;
     }
-    .title2,.email2,.officePhone,.fax {
+    .title2,.email2,.fax {
       display: none;
     }
     textarea {
@@ -104,8 +104,8 @@
   <input type="text" name="title2" id="title2" value="Title 2" onkeyup="loadCode();" class="title2" style="display: none;"><br class="title2" style="display: none;">
   <label for="phone">Mobile:</label>
   <input type="text" name="phone" id="phone" value="+00 (0) 000 000 000" onkeyup="loadCode();"><br>
-  <label for="officePhone" class="officePhone">Telephone:</label>
-  <input type="text" name="officePhone" id="officePhone" class="officePhone" value="+00 (0) 000 000 000" onkeyup="loadCode();"><br class="officePhone" style="display: none;">
+  <label for="officePhone" class="officePhone" >Telephone:</label>
+  <input type="text" name="officePhone" id="officePhone" class="officePhone" value="+00 (0) 000 000 000" onkeyup="loadCode();" ><br class="officePhone" >
   <label for="fax" class="fax" style="display: none;">Fax:</label>
   <input type="text" name="fax" id="fax" class="fax" value="+00 (0) 000 000 000" onkeyup="loadCode();" style="display: none;"><br class="fax" style="display: none;">
   <label for="email" class="email" style="display: inline-block;">Email:</label>
@@ -505,7 +505,7 @@
         showHide('.email2',"none");
         showHide('.email',"inline-block");
         showHide('.gif',"inline-block");
-        showHide('.officePhone',"inline-block");
+    
         showHide('.fax',"none");
         var text = decodeHtml(logo[1]+name[1]+genderpronouns[1]+title[1]+'\n'+phone[1]+officePhone[1]+email[1]+sgkinc[1]+office[1]+amic[1]+'\n'+gif[1]);
 		
@@ -590,7 +590,6 @@
         showHide('.email2',"none");
         showHide('.email',"inline-block");
         showHide('.gif',"inline-block");
-        showHide('.officePhone',"none");
         showHide('.fax',"none");
         var text = decodeHtml(logo[1]+name[1]+genderpronouns[1]+title[1]+'\n'+phone[1]+email[1]+sgkinc[1]+office[1]+amic[1]+'\n'+gif[1]);
         var code = css(font,fontBold,"")+makeVerdanaTable(
@@ -631,7 +630,6 @@
         showHide('.email2',"inline-block");
         showHide('.email',"inline-block");
         showHide('.gif',"none");
-        showHide('.officePhone',"none");
         showHide('.fax',"none");
         var text = decodeHtml(logo[1]+name[1]+genderpronouns[1]+title[1]+title2[1]+'\n'+phone[1]+email2[1]+office[1]+'SGK\n'+email[1]+sgkinc[1]+amic[1]);
         var code = css(font,fontBold,fontface())+makeOnsiteTable(
@@ -671,7 +669,6 @@
         showHide('.email2',"inline-block");
         showHide('.email',"inline-block");
         showHide('.gif',"none");
-        showHide('.officePhone',"none");
         showHide('.fax',"none");
         var text = decodeHtml(logo[1]+name[1]+genderpronouns[1]+title[1]+title2[1]+'\n'+phone[1]+email2[1]+office[1]+'SGK\n'+email[1]+sgkinc[1]+amic[1]);
         var code = css(font,fontBold,"")+makeOnsiteTable(
@@ -706,7 +703,6 @@
         showHide('.email2',"none");
         showHide('.email',"none");
         showHide('.gif',"none");
-        showHide('.officePhone',"none");
         showHide('.fax',"none");
         var text = decodeHtml(name[1]+genderpronouns[1]+title[1]+phone[1]+'\n'+logo[1]+office[1]);
         var code = css(font,fontBold,fontface())+makeSimpleTable(
